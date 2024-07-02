@@ -1,0 +1,48 @@
+#skills{
+    order:2;
+    background: url("../images/2065695.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill-heading {
+    
+    margin-bottom: 20px;
+    position:absolute;
+    text-align: center;
+    width:100%;
+    color:white;
+    top:15vh;
+    font-size:3rem;
+    text-decoration: underline;
+
+}
+
+.skill-table{
+    position:absolute;
+    top:30vh;
+    left: 10vw;
+    width:80vw;
+    height:60vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    overflow:scroll;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.skill-th,.skill-td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}

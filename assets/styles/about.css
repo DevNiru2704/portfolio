@@ -1,0 +1,142 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+
+}
+.container{
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    position:absolute;
+    bottom:100vh;
+}
+
+.nav-body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:0px;
+    position:absolute;
+    order:1;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    background: rgba(28, 28, 28, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 10px 20px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index:1000;
+}
+
+.nav-bar .nav-ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-li{
+    margin-right:3em;
+}
+
+.nav{
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size:1.5rem;
+}
+
+.main{
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    order:2;
+}
+
+#about{
+    display:flex;
+    background: url("../images/top-view-desk-dark-concept-with-copy-space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100vw;
+    position:absolute;
+    height: 100vh;
+    order:1;
+}
+
+#projects{
+    order:3;
+}
+
+#contact-me{
+    order:4;
+}
+
+.intro-message{
+    color:white;
+    font-size:3rem;
+    text-align:left;
+    position: absolute;
+    top:100px;
+    left:100px;
+}
+
+.about-para{
+    color:white;
+    font-size:1.2rem;
+    text-align:left;
+    position: absolute;
+    top:250px;
+    left:100px;
+    width:52.08%;
+}
+
+.name {
+    color: orange;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: typing 3.5s steps(30, end) infinite, blink-caret .75s step-end infinite;
+    max-width: 100%; 
+}
+
+.down-res{
+    position:absolute;
+    color:white;
+    top:450px;
+    left:100px;
+    text-decoration:none;
+    font-size:1.5rem;
+    background-color: blueviolet;
+    padding:10px;
+    border-radius:20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.down-res:hover,.down-res:focus{
+    background-color: rgb(85, 23, 143);
+    color:rgb(174, 174, 174);
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; visibility: visible; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+

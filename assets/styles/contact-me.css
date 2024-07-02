@@ -1,0 +1,71 @@
+#contact-me{
+    background: url("../images//Screenshot\ 2024-07-01\ 205101.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width:100vw;
+    position:absolute;
+    top:300vh;
+    color:white;
+    z-index: -1;
+}
+
+.contact-heading{
+    position:absolute;
+    font-size: 3rem;
+    text-align: center;
+    width:100vw;
+    top: 10vh;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    position:absolute;
+    top:40vh;
+    left:30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80vw;;
+    max-width: 600px; /* Adjust based on preference */
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 16px; /* Larger font for readability */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4285F4; /* Google's button color */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Button text style */
+}
+
+.contact-form button:hover {
+    background-color: #357ae8; /* Darker shade on hover */
+}
+
+footer{
+    color:white;
+    position:absolute;
+    top:390vh;
+    width: 100vw;
+    text-align: center;
+    order:4;
+}

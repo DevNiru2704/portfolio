@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <title>Portfolio</title>
+  <style>
+
+    *{
+      font-family: 'DM Sans', sans-serif;
+    }
+    .flex-container{
+      margin:0;
+      padding:0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("assets/images/all-black-black-business-desk.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat ;
+      color:white;
+      position: relative;
+      width: 100vw; /* Ensures full viewport width */
+      overflow: hidden; /* Prevents any overflow */
+    }
+
+    .flex-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Ensures the overlay is behind the content */
+  }
+
+  .profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  h1,h2,p{
+    text-align: center;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers the child elements */
+    justify-content: center; /* Vertically centers the child elements (optional) */
+    height: 100%; /* Ensure it takes the full height of its parent if you want vertical centering */
+  }
+
+  .learn-more-button {
+    display: inline-block; /* Allows applying padding and makes it clickable */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Changes cursor to indicate it's clickable */
+    color: white;
+    text-decoration: none;
+  }
+
+  .learn-more-button:hover, .learn-more-button:focus {
+    background-color: #0056b3; /* Darker shade for interaction */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    color: white;
+    text-decoration: none;
+  }
+  </style>
+</head>
+<body class="flex-container">
+  <div class="content-container">
+    <h1 class="welcome-message">WELCOME TO MY PORTFOLIO</h1>
+    <img class="profile-image" src="assets/images/1719159155513.jpeg" alt="">
+    <h2><p>NIRMALYA MANDAL</p></h2>
+    <p><a class="learn-more-button" href="content.html">Learn more about me</a></p>
+  </div>
+</body>
+</html>
